@@ -9,7 +9,12 @@ module.exports = {
         // bower:css
         'public/lib/bootstrap/dist/css/bootstrap.css',
         'public/lib/bootstrap/dist/css/bootstrap-theme.css',
-        'public/lib/angular-ui-notification/dist/angular-ui-notification.css'
+        'public/lib/angular-ui-notification/dist/angular-ui-notification.css',
+        'public/lib/unitegallery/dist/css/unite-gallery.css',
+        'public/lib/unitegallery/dist/themes/default/ug-theme-default.css',
+        'public/lib/unitegallery/dist/themes/video/skin-right-no-thumb.css',
+        'public/lib/unitegallery/dist/themes/video/skin-right-title-only.css',
+        'public/lib/lightgallery/dist/css/lightgallery.css'
         // endbower
       ],
       js: [
@@ -17,6 +22,7 @@ module.exports = {
         'public/lib/angular/angular.js',
         'public/lib/angular-animate/angular-animate.js',
         'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
+        'public/lib/jquery/dist/jquery.min.js',
         'public/lib/ng-file-upload/ng-file-upload.js',
         'public/lib/angular-messages/angular-messages.js',
         'public/lib/angular-mocks/angular-mocks.js',
@@ -24,6 +30,16 @@ module.exports = {
         'public/lib/angular-ui-notification/dist/angular-ui-notification.js',
         'public/lib/angular-ui-router/release/angular-ui-router.js',
         'public/lib/owasp-password-strength-test/owasp-password-strength-test.js',
+        'public/lib/unitegallery/dist/js/unitegallery.js',
+        'public/lib/unitegallery/dist/themes/default/ug-theme-default.js',
+        'public/lib/unitegallery/dist/themes/carousel/ug-theme-carousel.js',
+        'public/lib/unitegallery/dist/themes/compact/ug-theme-compact.js',
+        'public/lib/unitegallery/dist/themes/grid/ug-theme-grid.js',
+        'public/lib/unitegallery/dist/themes/slider/ug-theme-slider.js',
+        'public/lib/unitegallery/dist/themes/tiles/ug-theme-tiles.js',
+        'public/lib/unitegallery/dist/themes/video/ug-theme-video.js',
+        'public/lib/unitegallery/dist/themes/tilesgrid/ug-theme-tilesgrid.js',
+        'public/lib/lightgallery/dist/js/lightgallery.js'
         // endbower
       ],
       tests: ['public/lib/angular-mocks/angular-mocks.js']

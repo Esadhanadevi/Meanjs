@@ -1,18 +1,43 @@
 <section>
   <div class="page-header">
-    <h1>Articles</h1>
+    <h1>Unite Gallery</h1>
   </div>
   <div class="list-group">
-    <a ng-repeat="article in vm.articles" ui-sref="articles.view({ articleId: article._id })" class="list-group-item">
-      <small class="list-group-item-text">
-        Posted on
-        <span ng-bind="article.created | date:'mediumDate'"></span>
-        by
-        <span ng-if="article.user" ng-bind="article.user.displayName"></span>
-        <span ng-if="!article.user">Deleted User</span>
-      </small>
-      <h4 class="list-group-item-heading" ng-bind="article.title"></h4>
-      <p class="list-group-item-text" ng-bind="article.content"></p>
-    </a>
+    <uib-tabset active="activeJustified" justified="true">
+      <uib-tab index="0" heading="Tiles Gallery">
+        </hr>
+        <div id="lightGallery">
+          <a href="{{image.imageUrl}}" ng-repeat="image in vm.imageJson">
+            <img alt="Html5 Video" src="{{image.imageUrl}}">
+          </a>
+        </div>
+      </uib-tab>
+      <uib-tab index="0" heading="Tiles Gallery">
+        </hr>
+        <div id="imageGallery">
+          <a href="#" ng-repeat="image in vm.imageJson">
+            <img ng-if="!image.videoUrl" src="{{image.imageUrl}}" alt="The Shoot" title="The Shoot" data-image="{{image.imageUrl}}" , data-description="The Shoot">
+            <img ng-if="image.videoUrl" alt="Html5 Video" src="{{image.imageUrl}}" data-image="{{image.imageUrl}}" data-type="html5video" data-videomp4="{{image.videoUrl}}" data-description="Html5 Video Description">
+          </a>
+        </div>
+      </uib-tab>
+      <uib-tab index="1" heading="Slider Gallery">
+        </hr>
+        <div id="sliderGallery">
+          <a href="#" ng-repeat="image in vm.imageJson">
+            <img ng-if="!image.videoUrl" src="{{image.imageUrl}}" alt="The Shoot" title="The Shoot" data-image="{{image.imageUrl}}" , data-description="The Shoot">
+            <img ng-if="image.videoUrl" alt="Html5 Video" src="{{image.imageUrl}}" data-image="{{image.imageUrl}}" data-type="html5video" data-videomp4="{{image.videoUrl}}" data-description="Html5 Video Description">
+          </a>
+        </div>
+      </uib-tab>
+      <uib-tab index="2" heading="Grid Gallery">
+        <div id="gridGallery">
+          <a href="#" ng-repeat="image in vm.imageJson">
+            <img ng-if="!image.videoUrl" src="{{image.imageUrl}}" alt="The Shoot" title="The Shoot" data-image="{{image.imageUrl}}" , data-description="The Shoot">
+            <img ng-if="image.videoUrl" alt="Html5 Video" src="{{image.imageUrl}}" data-image="{{image.imageUrl}}" data-type="html5video" data-videomp4="{{image.videoUrl}}" data-description="Html5 Video Description">
+          </a>
+        </div>
+      </uib-tab>
+    </uib-tabset>
   </div>
 </section>

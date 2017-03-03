@@ -14,7 +14,9 @@
     "angular-ui-router": "~0.2.18",
     "bootstrap": "~3.3.6",
     "ng-file-upload": "~12.1.0",
-    "owasp-password-strength-test": "~1.3.0"
+    "owasp-password-strength-test": "~1.3.0",
+    "unitegallery": "^1.7.40",
+    "lightgallery": "^1.3.9"
   },
   "overrides": {
     "bootstrap": {
@@ -25,7 +27,9 @@
       ]
     },
     "jquery": {
-      "main": []
+      "main": [
+        "dist/jquery.min.js"
+      ]
     }
   }
 }
